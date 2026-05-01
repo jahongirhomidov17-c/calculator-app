@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Calculator</h2>
+    <form method="post">
+        <input type="number" name="num1" required>
+        <input type="number" name="num2" required>
+        <button type="submit">Add</button>
+    </form>
+
+    {% if result != "" %}
+        <h3>Result: {{result}}</h3>
+    {% endif %}
+</body>
+</html>
